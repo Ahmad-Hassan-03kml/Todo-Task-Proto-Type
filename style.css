@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+
+
+}
+
+body{
+    font-size: 1.6rem;
+    /* ab body ka font size 16 px e ho chuka he  */
+
+
+}
+
+/* yahan ham heasder ki height set kr k is ko bg dengey  */
+.header{
+    min-height: 70vh;
+    background:url("bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+    position: relative;
+    /* is k children ko center kr ney k  liey  */
+}
+
+.logo{
+    color: aliceblue;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+
+
+.nav{
+    min-height: 10vh;
+    /* border: 1px solid bisque; */
+    display: flex;
+    justify-content: space-between;
+
+    /* ab ham ne vertivcal is k tmamm cholds ko center krna he  */
+    align-items: center;
+}
+.nav-items{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    
+}
+
+/* ab ham ak container bnaengey jis k max width 1200 px krdengey jis pr ham ne hadd laga di he k 1200 px rahegi or min devices k liey 90 % krdengey  */
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+    /* marig auto krney se automatically center hojaegaaa */
+}
+
+/* hamen pata he k ham kisi children k group ko parent k hisab se center align krsktey hen parent ko position relative de kr or child ko position absolute de kr  */
+.head-line{
+    position: absolute;
+    /* iska parent header he jiski position ham ne relative di hui he  */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) ;
+
+    text-align: center;
+}
+
+.hl-h2{
+    color: white;
+}
+
+.hl-btn
+{
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    margin-top: 1em;
+    font-weight: 600;
+}
+
+/* abb ham btn ko common style krtye hen jis e ham buttn ka border or outline none krngye  */
+.btn{
+    display: inline-block;
+    /* takey ham iska size km zeada kr sken  */
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+}
+
+
+/* styling of to-do section  */
+
+.todo-sec{
+    text-align: center;
+    margin-top: 5rem;
+
+}
+
+.todo-form{
+    margin-top: 2rem;
+    /* border: 1px solid red; */
+    min-height: 6vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.todo-form input
+{
+    min-height: 100%;
+
+}
+
+
+.todo-form input[type="text"]
+{
+    width: 78%;
+    padding: 1rem;
+    font-weight: 600;
+}
+.todo-form input[type="submit"]
+{
+    width: 20%;
+    padding: 1rem;
+
+}
+
+.todo-form .todo-btn
+{
+    padding: 1rem 2rem;
+    font-weight: 600;
+    background:#41403F ;
+    color: white;
+}
+
+.todo-form .todo-btn:hover{
+    background: #181818;
+    transition: all 0.5s ease-in-out ;
+    
+}
+
+
+/* an yahan ham ak signup form pe kam krengey  */
+
+/* jo k user ko sign up raneyk liey kia gya he  */
+
+.sign-up
+{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    
+    background: rgb(202, 200, 200);
+    padding: 2rem;
+    border-radius: 10px;
+
+    box-shadow: 1px 1px 4px;
+
+}
+.sign-up-form
+{
+    /* background: rgb(160, 156, 156); */
+    /* min-width: 500px; */
+    width: 80%;
+    margin: auto;
+
+}
+
+.sign-up-form label
+{
+    display: block;
+    /* block krnye sey hoga ye k ye poori width occupy kr lega or iski fields neechey shift hoaengi  */
+    width: 100%;
+}
+
+.sign-up-form input
+{
+    display: block;
+    /* block krnye sey hoga ye k ye poori width occupy kr lega or iski fields neechey shift hoaengi  */
+    width: 100%;
+    padding: 0.7rem;
+
+}
+
+.ip-group
+{
+    margin-top: 2rem;
+}
+
+.sign-up-form textarea
+{
+    display: block;
+    /* block krnye sey hoga ye k ye poori width occupy kr lega or iski fields neechey shift hoaengi  */
+    width: 100%;
+    min-height: 15vh;
+
+}
+
+.sign-up-btn
+{
+    padding: 1rem ;
+    font-weight: 600;
+    margin-top: 1rem;
+    background: #41403F;
+    color: white ;
+
+}
+.sign-up-btn:hover{
+    background:#1f1e1e ;
+    transition: all 1s ease-in-out;
+}
+
+
+.test{
+
+    color: white;
+
+}
+
+.test2{
+    color: yellow;
+}
+
+
+/* .temp
+{
+    color: black;
+}
+
+.list-items2{
+    color: black;
+}
+
+.list-items2 .list-item2
+{
+    color: black;
+} */
+
+.task-box
+{
+    margin-top: 2em;
+}
+
+.task-box li
+{
+
+    margin-top: 1em;
+    padding: 0.6em;
+    border-radius: 10px;
+    list-style-type: none;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    box-shadow: 1px 1px 10px 1px;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+
+
+/* =============== span section  */
+
+.btn-span
+{
+    /* border: 1px solid red; */
+    /* margin-left: 1.5em;
+    display: inline-block */
+}
+
+.todo-items li
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-remove, .btn-done
+{
+    padding: 1em;
+    background:#41403F ;
+    color: white;
+    font-weight: 700;
+    transition: all 1s ease-in-out;
+    border-radius: 8px;
+    /* margin-top: 0.5em; */
+
+}
+
+
+.btn-remove:hover , .btn-done:hover
+{
+    background: #181818;
+transition: all 0.5s ease-in-out ;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="index.js" defer> </script> -->
+    <script src="index1.js" defer> </script>
+    <link rel="stylesheet" href="style.css">
+    <title>DOM Pr..</title>
+</head>
+<body>
+
+    
+    <header class="header" id="home">
+        <!-- <h1 class="test"> here is test kkjkjkjkjkj</h1> -->
+        <nav class="container nav">
+            <h1 class="logo" id0="id1">  Work Tasks</h1>
+            <ul class="nav-items">
+                <li class="nav-item"> <a href="#home"> Home</a> </li>
+                <li class="nav-item"> <a href="#todo"> Todo</a> </li>
+                <li class="nav-item"> <a href="#sign-up"> Sign Up</a> </li>
+            </ul>
+        </nav>
+
+        <!-- yahan ham ab headlin banaengye h2 ki madd se  or us k neechey k btn bnaemgey 
+         -->
+         <div class="head-line" id="">
+             <h2 class="hl-h2">Manage Your Tasks </h2>
+             <button class="btn hl-btn">Learn More </button>
+
+         </div>
+
+    </header>
+
+    <!-- ab yhan ham ak section bnaaengey han jis me heading k st akl form bnaengey todo add krney k liey  -->
+<section class="todo-sec container" id="todo">
+    <h2> Daily Todo Tasks  </h2>
+    <form class="todo-form">
+        <input type="text" name="" id="todo-text" placeholder="Enter Task to do">
+        <input type="submit" value="Add ToDo" class="btn todo-btn">
+
+    </form>
+
+    <!-- yahan ham sb ul bnaengey jis ki li me items koadd krngey  manuaally b or by js dynamically b  -->
+
+
+    <div class="tasksbox">
+        <ul class="todo-items task-box">
+            
+            <li> <span class="text"> I Am Test Task Added ... </span>  
+                <span class="btn-span">
+                     <button class="btn btn-done">  Done </button> 
+                     <button class="btn btn-remove">  Remove</button> 
+                </span> 
+            </li>
+            
+        </ul>
+    </div>
+
+
+</section>
+
+ <!-- ab ham yahan ak or section bnaengey jis me signup form hogaa -->
+
+ <section class="sign-up container "  id="sign-up">
+    
+    <h2 class="sign-up-h2"> Sign Up </h2>
+     <form class="sign-up-form">
+         <!-- yhan ham ak button or ak input k hisab se pair bnaaengey  -->
+
+         <div class="ip-group">
+             <label for="username"> User Name: </label>
+             <input type="text" name="username" id="username" required>
+         </div>
+
+            <!-- =================== -->
+         <div class="ip-group">
+             <label for="password">Password: </label>
+             <input type="password" name="password" id="password" required>
+         </div>
+
+            <!-- =================== -->
+         <div class="ip-group">
+             <label for="confirm-pwd">Confirm Password: </label>
+             <input type="password" name="confirm-pwd" id="confirm-pwd" required>
+         </div>
+
+            <!-- =================== -->
+         <div class="ip-group">
+             <label for="phone">Phone: </label>
+             <input type="text" name="phone" id="phone" >
+         </div>
+
+            <!-- =================== -->
+         <div class="ip-group">
+             <label for="email">Email: </label>
+             <input type="email" name="email" id="email" required>
+         </div>
+
+            <!-- =================== -->
+         <div class="ip-group">
+             <label for="message">Message: </label>
+             <!-- <input type="" name="message" id="message"> -->
+             <textarea placeholder="Enter Your Comment" class="msg"></textarea>   
+        </div>
+
+            <!-- =================== -->
+            <input type="submit" value="Submit" class="btn sign-up-btn">
+
+
+     </form>
+ </section>
+
+    
+</body>
+</html>
